@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets\css\style.css">
     <title>Application Form</title>
 </head>
 <body>
-    <h1>Application Form</h1>
+    <header>
+                <div>
+            <!-- Navigation -->
+             <nav>
+                <a href="index.html">Home</a> |
+                <a href="application.html">Application Form</a> |
+                <a href="https://www.brightonmet.ac.uk/" target="_blank">BMC @ CCG Main Site</a>
+             </nav>
+        </div>
+<h1>Application Form</h1>
+    </header>
+    <main>
+    <form action="https://formsubmit.co/50151236@stu.gbmc.ac.uk" method="post">
+        <div class="form-input-container">
+            <label for="name" class="textbox">Name</label>
+            <input type="text" name="applicant-name" id="name" required>
+        </div>
+        <div class="form-input-container">
+            <label for="email" class="textbox">Email</label>
+            <input type="text" name="applicant-email" id="email" required>
+        </div>
+                <div class="form-input-container">
+                    <h2>What languages are you familiar with?</h2>
+            <input type="checkbox" name="applicant-languages[]" id="html" value="HTML">
+                    <label for="html">HTML</label>
+            <input type="checkbox" name="applicant-languages[]" id="css"  value="CSS">
+                    <label for="html">CSS</label>
+            <input type="checkbox" name="applicant-languages[]" id="javascript"  value="JavaScript">
+                    <label for="javascript">JavaScript</label>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>      
+    </main>
 </body>
 </html>
